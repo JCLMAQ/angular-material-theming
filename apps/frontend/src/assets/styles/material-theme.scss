@@ -1,0 +1,59 @@
+@use '@angular/material' as mat;
+
+mat.$theme-ignore-duplication-warnings: true;
+
+@include mat.core();
+
+
+/*
+$red-palette
+$green-palette
+$blue-palette
+$yellow-palette
+$cyan-palette
+$magenta-palette
+$orange-palette
+$chartreuse-palette
+$azure-palette
+$violet-palette
+$rose-palette
+*/
+
+// Define a dark theme
+$angular-app-dark-theme: mat.define-theme((
+  color: (
+    theme-type: dark,
+    primary: mat.$green-palette,
+  ),
+));
+
+// Define a light theme
+$angular-app-light-theme: mat.define-theme((
+  color: (
+    theme-type: light,
+    primary: mat.$green-palette,
+  ),
+));
+
+html {
+  // Apply the light theme by default
+  // @include mat.core-theme($angular-app-light-theme);
+  // @include mat.button-theme($angular-app-light-theme);
+
+  // Apply the dark theme only when the user prefers dark themes.
+  // @media (prefers-color-scheme: dark) {
+  //   // Use the `-color` mixins to only apply color styles without reapplying the same
+  //   // typography and density styles.
+  //   @include mat.core-color($angular-app-dark-theme);
+  //   @include mat.button-color($angular-app-dark-theme);
+  // }
+}
+
+.dark-theme{
+  @include mat.all-component-themes($angular-app-dark-theme);
+  // @include mat.all-component-colors($angular-app-dark-theme);
+}
+
+.light-theme{
+  @include mat.all-component-themes($angular-app-light-theme);
+}
