@@ -8,6 +8,9 @@ dependencies:
   '@angular/animations':
     specifier: ^18.0.0
     version: 18.0.0(@angular/core@18.0.0)
+  '@angular/cdk':
+    specifier: 18.0.0
+    version: 18.0.0(@angular/common@18.0.0)(@angular/core@18.0.0)(rxjs@7.8.1)
   '@angular/common':
     specifier: ^18.0.0
     version: 18.0.0(@angular/core@18.0.0)(rxjs@7.8.1)
@@ -35,6 +38,12 @@ dependencies:
   '@nx/angular':
     specifier: 19.1.0
     version: 19.1.0(@angular-devkit/build-angular@18.0.1)(@angular-devkit/core@18.0.1)(@angular-devkit/schematics@18.0.1)(@schematics/angular@18.0.1)(@swc-node/register@1.9.1)(@swc/core@1.5.7)(@types/node@20.12.12)(eslint@9.3.0)(nx@19.1.0)(rxjs@7.8.1)(typescript@5.4.5)
+  ngx-cookie-service:
+    specifier: ^18.0.0
+    version: 18.0.0(@angular/common@18.0.0)(@angular/core@18.0.0)
+  ngx-quicklink:
+    specifier: ^0.4.5
+    version: 0.4.5(@angular/common@18.0.0)(@angular/core@18.0.0)
   rxjs:
     specifier: ^7.8.1
     version: 7.8.1
@@ -10426,6 +10435,28 @@ packages:
 
   /neo-async@2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
+
+  /ngx-cookie-service@18.0.0(@angular/common@18.0.0)(@angular/core@18.0.0):
+    resolution: {integrity: sha512-hkkUckzZTXXWtFgvVkT2hg6mwYMLXioXDZWBsVCOy9gYkADjsj0N5VViO7eo2izQ0VcMPd/Etog1trf/T4oZMQ==}
+    peerDependencies:
+      '@angular/common': ^18.0.0-rc.0
+      '@angular/core': ^18.0.0-rc.0
+    dependencies:
+      '@angular/common': 18.0.0(@angular/core@18.0.0)(rxjs@7.8.1)
+      '@angular/core': 18.0.0(rxjs@7.8.1)(zone.js@0.14.6)
+      tslib: 2.6.2
+    dev: false
+
+  /ngx-quicklink@0.4.5(@angular/common@18.0.0)(@angular/core@18.0.0):
+    resolution: {integrity: sha512-aq0oDWoRqAmLZkf3maZPU804Njv19Lzvf/e5AiEawwaBoSWjYqu24/nwa0hrvngPJ/OM3qvR6obWOLXJnKfQvA==}
+    peerDependencies:
+      '@angular/common': ^17.0.0
+      '@angular/core': ^17.0.0
+    dependencies:
+      '@angular/common': 18.0.0(@angular/core@18.0.0)(rxjs@7.8.1)
+      '@angular/core': 18.0.0(rxjs@7.8.1)(zone.js@0.14.6)
+      tslib: 2.6.2
+    dev: false
 
   /nice-napi@1.0.2:
     resolution: {integrity: sha512-px/KnJAJZf5RuBGcfD+Sp2pAKq0ytz8j+1NehvgIGFkvtvFrDM3T8E4x/JJODXK9WZow8RRGrbA9QQ3hs+pDhA==}

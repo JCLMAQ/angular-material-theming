@@ -8,9 +8,9 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2015",
-    "module": "esnext",
-    "lib": ["es2020", "dom"],
+    "target": "ES2022",
+    "module": "ES2022",
+    "lib": ["ES2022", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
@@ -19,9 +19,7 @@
       "@angular-material-theming/material": [
         "libs/frontend/material/src/index.ts"
       ],
-      "@angular-material-theming/theming": [
-        "libs/frontend/theming/src/index.ts"
-      ]
+      "@angular-material-theming/theme": ["libs/frontend/theme/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
